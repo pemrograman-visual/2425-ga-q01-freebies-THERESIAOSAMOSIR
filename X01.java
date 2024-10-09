@@ -31,10 +31,10 @@ public class X01 {
         } while (hargabuku != 0);
         if (jumlahbuku >= 2 && hasil >= 100) {
             hasilakhir = hasil - terkecil;
+            System.out.println(toFixed(hasilakhir,2));
         } else {
             System.out.println(toFixed(hasil,2));
         }
-        System.out.println(toFixed(hasilakhir,2));
     }
     
     private static String toFixed(double value, int digits) {
