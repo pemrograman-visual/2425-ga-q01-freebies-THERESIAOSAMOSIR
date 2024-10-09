@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="X01"/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-09 03:42:28 PM"/>
+        <attribute name="created" value="QVNVUztTVU5OWS1MQVBUT1A7MjAyNC0xMC0wOTswMzozODowMyBQTTsyNTE3"/>
+        <attribute name="edited" value="QVNVUztTVU5OWS1MQVBUT1A7MjAyNC0xMC0wOTswMzo0MTowMiBQTTs1O2JveWhhO0JPWTsyMDI0LTEwLTA5OzAzOjA3OjU0IFBNO1gwMVsxXS5mcHJnOzU2ODE="/>
+        <attribute name="edited" value="QVNVUztTVU5OWS1MQVBUT1A7MjAyNC0xMC0wOTswMzo0MjoyOCBQTTsxOzI2Mjc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="hargabuku, hasil, nilai, jumlahbuku, terkecil, hasilakhir" type="Real" array="False" size=""/>
+            <assign variable="nilai" expression="0"/>
+            <assign variable="jumlahbuku" expression="0"/>
+            <assign variable="terkecil" expression="99999"/>
+            <do expression="hargabuku !=0">
+                <input variable="hargabuku"/>
+                <if expression="hargabuku=0">
+                    <then/>
+                    <else>
+                        <assign variable="hasil" expression="hargabuku+nilai"/>
+                        <assign variable="nilai" expression="hasil"/>
+                        <assign variable="jumlahbuku" expression="jumlahbuku+1"/>
+                        <if expression="terkecil&lt;hargabuku">
+                            <then/>
+                            <else>
+                                <assign variable="terkecil" expression="hargabuku"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </do>
+            <if expression="jumlahbuku&gt;=2 &amp;&amp; hasil&gt;= 100">
+                <then>
+                    <assign variable="hasilakhir" expression="hasil-terkecil"/>
+                </then>
+                <else>
+                    <output expression="tofixed(hasil,2)" newline="True"/>
+                </else>
+            </if>
+            <output expression="tofixed(hasilakhir,2)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
