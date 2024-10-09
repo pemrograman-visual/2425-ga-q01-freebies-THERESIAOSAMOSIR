@@ -4,10 +4,10 @@
         <attribute name="name" value="X01"/>
         <attribute name="authors" value="ASUS"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-10-09 04:33:12 PM"/>
+        <attribute name="saved" value="2024-10-09 04:35:53 PM"/>
         <attribute name="created" value="QVNVUztTVU5OWS1MQVBUT1A7MjAyNC0xMC0wOTswMzozODowMyBQTTsyNTE3"/>
         <attribute name="edited" value="QVNVUztTVU5OWS1MQVBUT1A7MjAyNC0xMC0wOTswMzo0MTowMiBQTTs1O2JveWhhO0JPWTsyMDI0LTEwLTA5OzAzOjA3OjU0IFBNO1gwMVsxXS5mcHJnOzU2ODE="/>
-        <attribute name="edited" value="QVNVUztTVU5OWS1MQVBUT1A7MjAyNC0xMC0wOTswNDozMzoxMiBQTTs1OzI2MjU="/>
+        <attribute name="edited" value="QVNVUztTVU5OWS1MQVBUT1A7MjAyNC0xMC0wOTswNDozNTo1MyBQTTs2OzI2MzM="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -41,10 +41,10 @@
                     <assign variable="hasilakhir" expression="hasil-terkecil"/>
                 </then>
                 <else>
-                    <output expression="hasil" newline="True"/>
+                    <output expression="tofixed(hasil,2)" newline="True"/>
                 </else>
             </if>
-            <output expression="hasilakhir" newline="True"/>
+            <output expression="tofixed(hasilakhir,2)" newline="True"/>
         </body>
     </function>
 </flowgorithm>

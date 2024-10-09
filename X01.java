@@ -4,7 +4,7 @@
 import java.util.*;
 import java.lang.Math;
 
-public class X01 {
+public class JavaApplication {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -32,8 +32,12 @@ public class X01 {
         if (jumlahbuku >= 2 && hasil >= 100) {
             hasilakhir = hasil - terkecil;
         } else {
-            System.out.println(hasil);
+            System.out.println(toFixed(hasil,2));
         }
-        System.out.println(hasilakhir);
+        System.out.println(toFixed(hasilakhir,2));
+    }
+    
+    private static String toFixed(double value, int digits) {
+        return String.format("%." + digits + "f", value);
     }
 }
