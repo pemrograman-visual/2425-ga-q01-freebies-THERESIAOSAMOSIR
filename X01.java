@@ -14,6 +14,8 @@ public class X01 {
         nilai = 0;
         jumlahbuku = 0;
         terkecil = 99999;
+        hasil = 0;
+        hasilakhir = 0;
         do {
             hargabuku = Double.parseDouble(input.nextLine());
             if (hargabuku == 0) {
