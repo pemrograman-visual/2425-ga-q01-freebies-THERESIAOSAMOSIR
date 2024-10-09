@@ -8,7 +8,8 @@ public class X01 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        double hargabuku, hasil, nilai, jumlahbuku, terkecil, hasilakhir;
+        double hargabuku, hasil, nilai, terkecil, hasilakhir;
+        int jumlahbuku;
 
         nilai = 0;
         jumlahbuku = 0;
@@ -29,12 +30,8 @@ public class X01 {
         if (jumlahbuku >= 2 && hasil >= 100) {
             hasilakhir = hasil - terkecil;
         } else {
-            System.out.println(toFixed(hasil,2));
+            System.out.println(hasil);
         }
-        System.out.println(toFixed(hasilakhir,2));
-    }
-    
-    private static String toFixed(double value, int digits) {
-        return String.format("%." + digits + "f", value);
+        System.out.println(hasilakhir);
     }
 }

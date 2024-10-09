@@ -4,15 +4,16 @@
         <attribute name="name" value="X01"/>
         <attribute name="authors" value="ASUS"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-10-09 03:42:28 PM"/>
+        <attribute name="saved" value="2024-10-09 04:24:48 PM"/>
         <attribute name="created" value="QVNVUztTVU5OWS1MQVBUT1A7MjAyNC0xMC0wOTswMzozODowMyBQTTsyNTE3"/>
         <attribute name="edited" value="QVNVUztTVU5OWS1MQVBUT1A7MjAyNC0xMC0wOTswMzo0MTowMiBQTTs1O2JveWhhO0JPWTsyMDI0LTEwLTA5OzAzOjA3OjU0IFBNO1gwMVsxXS5mcHJnOzU2ODE="/>
-        <attribute name="edited" value="QVNVUztTVU5OWS1MQVBUT1A7MjAyNC0xMC0wOTswMzo0MjoyOCBQTTsxOzI2Mjc="/>
+        <attribute name="edited" value="QVNVUztTVU5OWS1MQVBUT1A7MjAyNC0xMC0wOTswNDoyNDo0OCBQTTsyOzI2MzE="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="hargabuku, hasil, nilai, jumlahbuku, terkecil, hasilakhir" type="Real" array="False" size=""/>
+            <declare name="hargabuku, hasil, nilai, terkecil, hasilakhir" type="Real" array="False" size=""/>
+            <declare name="jumlahbuku" type="Integer" array="False" size=""/>
             <assign variable="nilai" expression="0"/>
             <assign variable="jumlahbuku" expression="0"/>
             <assign variable="terkecil" expression="99999"/>
@@ -38,10 +39,10 @@
                     <assign variable="hasilakhir" expression="hasil-terkecil"/>
                 </then>
                 <else>
-                    <output expression="tofixed(hasil,2)" newline="True"/>
+                    <output expression="hasil" newline="True"/>
                 </else>
             </if>
-            <output expression="tofixed(hasilakhir,2)" newline="True"/>
+            <output expression="hasilakhir" newline="True"/>
         </body>
     </function>
 </flowgorithm>
